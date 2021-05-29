@@ -3,7 +3,7 @@ pipeline{
     stages {
         stages('clone'){
             steps {
-                git https://github.com/datmv/jenkins-github.git
+                git 'https://github.com/datmv/jenkins-github.git'
             }
         }
 
