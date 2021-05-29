@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages {
-        stages('clone'){
+        stage('clone'){
             steps {
                 git 'https://github.com/datmv/jenkins-github.git'
             }
