@@ -1,16 +1,20 @@
-pipeline{
-    agent any
+pipeline {
+    agent any 
     stages {
-        stage('clone'){
+        stage('Build') { 
             steps {
-                git 'https://github.com/datmv/jenkins-github.git'
-            }            
+                // 
+            }
         }
-        stage ('connect to dockerhub'){
+        stage('Test') { 
             steps {
-                withDockerRegistry(credentialsId: 'datmv-dockerhub', url: 'https://index.docker.io/v1/')
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
             }
         }
     }
-
 }
